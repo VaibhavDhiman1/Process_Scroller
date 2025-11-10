@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global typography to match original */
+:root { --text-color: rgba(245,245,245,0.9); --font-primary: "PP Neue Montreal", sans-serif; }
+html,body{ font-family: var(--font-primary); text-transform: uppercase; letter-spacing: -0.02em; background:#fff; color:#000; overflow-x:hidden; }

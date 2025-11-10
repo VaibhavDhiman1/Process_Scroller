@@ -16,15 +16,12 @@ export default function ColumnList({ items, active, onClick, side, onHover }) {
           key={label}
           data-index={i}
           onClick={() => onClick(i)}
-          onMouseEnter={() => onHover && onHover(i)}   // <- play hover sound only
+          onMouseEnter={() => onHover && onHover(i)}
           className={[
             "text-left",
-            // base (loaded state lands you at 0.3 like original)
             "opacity-30 translate-y-5",
-            // make hovered item look 'focused' like original CSS :hover
             "hover:opacity-100 focus-visible:opacity-100",
             "transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
-            // active state = fully focused + nudge + dot (unchanged)
             i === active
               ? (side === "left"
                   ? "opacity-100 translate-x-[10px] pl-[15px]"

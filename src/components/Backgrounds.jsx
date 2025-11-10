@@ -16,7 +16,7 @@ export default function Backgrounds({ activeIndex, prevIndex }) {
             "absolute left-0 w-full object-cover",
             "top-[-10%] h-[120%]",
             "opacity-0",
-            "brightness-[.8] will-change-transform", // << add: exact look match
+            "brightness-[.8] will-change-transform",
             i === activeIndex
               ? "opacity-100 z-20"
               : i === prevIndex

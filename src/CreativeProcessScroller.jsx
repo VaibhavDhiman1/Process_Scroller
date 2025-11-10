@@ -114,7 +114,6 @@ export default function CreativeProcessScroller() {
   #left-column button:hover span, #right-column button:hover span { color: #fff !important; }
 `}</style>
 
-
       {loading && <LoadingOverlay progress={counter} />}
 
       <div
